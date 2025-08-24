@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe - Plataforma de Navegación Portuaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <i class="fas fa-ship"></i>
+                <h1>PortTrack - Informe Técnico</h1>
+                <p>Despliegue y Monitoreo Continuo para Plataforma de Navegación Portuaria</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#seccion1" class="nav-link">Estrategia de Despliegue</a></li>
+                <li><a href="#seccion2" class="nav-link">Configuración y Seguridad</a></li>
+                <li><a href="#seccion3" class="nav-link">Monitoreo Continuo</a></li>
+                <li><a href="#seccion4" class="nav-link">ChatOps</a></li>
+                <li><button id="downloadPdf" class="btn-download"><i class="fas fa-download"></i> Descargar PDF</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="content-wrapper">
+                <aside class="sidebar">
+                    <div class="sidebar-content">
+                        <h3>Navegación</h3>
+                        <ul class="sidebar-nav">
+                            <li><a href="#seccion1">Despliegue Continuo</a></li>
+                            <li><a href="#seccion2">Entornos y Seguridad</a></li>
+                            <li><a href="#seccion3">Monitoreo</a></li>
+                            <li><a href="#seccion4">ChatOps</a></li>
+                        </ul>
+                        
+                        <div class="pipeline-status">
+                            <h4>Estado del Pipeline</h4>
+                            <div class="status-item">
+                                <span class="status-indicator success"></span>
+                                <span>Build: Exitoso</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-indicator success"></span>
+                                <span>Deploy: Activo</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-indicator warning"></span>
+                                <span>Tests: En progreso</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="content">
+                    <div id="informe-content">
+                        <!-- El contenido del informe se cargará aquí -->
+                        <div class="loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Cargando informe...</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PortTrack - Plataforma de Navegación Portuaria</p>
+            <p>Informe generado automáticamente por el pipeline de CI/CD</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
