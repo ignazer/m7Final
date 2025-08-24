@@ -29,8 +29,7 @@ M7Final/
 
 - **HTML5/CSS3/JavaScript** - Frontend
 - **GitHub Actions** - CI/CD
-- **Puppeteer** - Generación de PDF
-- **Pandoc** - Conversión de Markdown
+- **Pandoc** - Conversión de Markdown y generación de PDF
 - **GitHub Pages** - Hosting
 
 ## 📋 Lo que necesitas hacer manualmente
@@ -72,14 +71,12 @@ El pipeline se ejecuta automáticamente cuando:
 
 ### Etapas del Pipeline:
 1. **🚢 Checkout** - Descarga el código
-2. **📦 Setup** - Instala Node.js y dependencias
-3. **🧪 Tests** - Ejecuta pruebas unitarias
-4. **🔍 Security** - Escanea vulnerabilidades
-5. **📄 Convert** - Convierte Markdown a HTML
-6. **📋 PDF** - Genera PDF del informe
-7. **🏗️ Build** - Construye el sitio estático
-8. **📊 Artifacts** - Crea artefactos descargables
-9. **🚀 Deploy** - Despliega en GitHub Pages
+2. **🧪 Tests** - Ejecuta pruebas básicas
+3. **🔍 Security** - Escanea vulnerabilidades
+4. **📄 PDF** - Genera PDF del informe con Pandoc
+5. **🏗️ Build** - Construye el sitio estático
+6. **📊 Artifacts** - Crea artefactos descargables
+7. **🚀 Deploy** - Despliega en GitHub Pages
 
 ## 📊 Artefactos Generados
 
@@ -89,12 +86,7 @@ Cada ejecución del pipeline genera:
 
 ## 🌐 Demo Local
 
-Para probar localmente:
-```bash
-npm install
-npm run dev
-# Abre http://localhost:3000
-```
+Para probar localmente, simplemente abre el archivo `index.html` en tu navegador:
 
 ## ✨ Funcionalidades
 
