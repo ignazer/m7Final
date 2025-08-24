@@ -90,4 +90,3 @@ El informe técnico incluye:
 - **Diseño responsive** para móviles
 - **Tema portuario** profesional
 
-¡El pipeline está listo para demostrar CI/CD, monitoreo y automatización en acción! 🚢
