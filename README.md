@@ -1,14 +1,28 @@
-# PortTrack - Informe Técnico
+# PortTrack - Proyecto Módulo 7 Final
 
-Este proyecto contiene el informe técnico sobre **Despliegue y Monitoreo Continuo para una Plataforma de Navegación Portuaria**, implementado como una página web estática con pipeline automatizado.
+Este es el **proyecto final del Módulo 7** que implementa una solución completa de **CI/CD y DevOps** para una plataforma de navegación portuaria.
 
-## 🚀 Características
+## 🎯 Objetivo del Proyecto
 
-- **Página web responsive** con diseño profesional
-- **Pipeline CI/CD automatizado** con GitHub Actions
-- **Generación automática de PDF** del informe
-- **Despliegue automático** en GitHub Pages
-- **Artefactos descargables** (sitio web y PDF)
+Demostrar competencias en:
+- **Despliegue continuo** con GitHub Actions
+- **Monitoreo y observabilidad** de aplicaciones
+- **Automatización de pipelines** CI/CD
+- **Gestión de artefactos** y documentación técnica
+
+## 🚀 Funcionalidades
+
+- **📄 Despliegue automático** del informe técnico a GitHub Pages
+- **📊 Generación de artefactos** descargables (PDF del informe)
+- **🔄 Pipeline automatizado** con tests y validaciones
+- **🌐 Sitio web responsive** con diseño profesional
+
+## 🛠️ Tecnologías Utilizadas
+
+- **GitHub Actions** - Pipeline CI/CD
+- **GitHub Pages** - Hosting automático
+- **Pandoc** - Conversión de Markdown a PDF
+- **HTML5/CSS3/JavaScript** - Frontend del sitio web
 
 ## 📁 Estructura del Proyecto
 
@@ -16,77 +30,57 @@ Este proyecto contiene el informe técnico sobre **Despliegue y Monitoreo Contin
 M7Final/
 ├── .github/workflows/
 │   └── deploy.yml          # Pipeline de GitHub Actions
-├── index.html              # Página principal
-├── style.css               # Estilos CSS
+├── index.html              # Página principal del informe
+├── style.css               # Estilos CSS del sitio
 ├── script.js               # Funcionalidades JavaScript
-├── Informe.md              # Contenido del informe en Markdown
-├── package.json            # Dependencias del proyecto
-├── pipeline-demo.yaml      # Pipeline demostrativo original
-└── README.md               # Este archivo
+├── Informe.md              # Contenido técnico en Markdown
+├── .gitignore              # Archivos a ignorar
+└── README.md               # Documentación del proyecto
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## � Pipeline Automatizado
 
-- **HTML5/CSS3/JavaScript** - Frontend
-- **GitHub Actions** - CI/CD
-- **Pandoc** - Conversión de Markdown y generación de PDF
-- **GitHub Pages** - Hosting
+El pipeline se ejecuta automáticamente y realiza:
 
-## 📋 Lo que necesitas hacer manualmente
-
-### 1. Crear repositorio en GitHub
-```bash
-# Crear un nuevo repositorio en GitHub
-# Nombre sugerido: porttrack-informe
-```
-
-### 2. Subir los archivos
-```bash
-# En tu terminal, dentro de la carpeta M7Final:
-git init
-git add .
-git commit -m "Initial commit: PortTrack informe pipeline"
-git branch -M main
-git remote add origin https://github.com/TU-USUARIO/porttrack-informe.git
-git push -u origin main
-```
-
-### 3. Habilitar GitHub Pages
-1. Ve a **Settings** de tu repositorio
-2. Scroll hasta **Pages**
-3. En **Source** selecciona **GitHub Actions**
-4. ¡Listo! El pipeline se ejecutará automáticamente
-
-### 4. Ver el resultado
-- **Sitio web**: `https://TU-USUARIO.github.io/porttrack-informe/`
-- **Pipeline**: Pestaña **Actions** en GitHub
-- **Artefactos**: Disponibles para descarga en cada ejecución
-
-## 🔄 Pipeline Automático
-
-El pipeline se ejecuta automáticamente cuando:
-- Haces `push` a la rama `main`
-- Creas un `pull request`
-- Lo ejecutas manualmente desde GitHub Actions
-
-### Etapas del Pipeline:
-1. **🚢 Checkout** - Descarga el código
-2. **🧪 Tests** - Ejecuta pruebas básicas
-3. **🔍 Security** - Escanea vulnerabilidades
-4. **📄 PDF** - Genera PDF del informe con Pandoc
-5. **🏗️ Build** - Construye el sitio estático
-6. **📊 Artifacts** - Crea artefactos descargables
-7. **🚀 Deploy** - Despliega en GitHub Pages
+1. **🧪 Tests** - Validaciones básicas del código
+2. **🔍 Security** - Escaneo de vulnerabilidades
+3. **📄 PDF Generation** - Convierte el informe Markdown a PDF
+4. **🏗️ Build** - Construye el sitio estático
+5. **📊 Artifacts** - Crea artefactos descargables
+6. **🚀 Deploy** - Despliega automáticamente a GitHub Pages
 
 ## 📊 Artefactos Generados
 
-Cada ejecución del pipeline genera:
-- **porttrack-informe-site**: Sitio web completo
-- **porttrack-informe-pdf**: Informe en formato PDF
+Cada ejecución del pipeline produce:
+- **Site completo** - Sitio web desplegado en GitHub Pages
+- **PDF del informe** - Documento técnico descargable
 
-## 🌐 Demo Local
+## 🌐 Demo en Vivo
 
-Para probar localmente, simplemente abre el archivo `index.html` en tu navegador:
+- **Sitio web**: `https://ignazer.github.io/m7Final/`
+- **Pipeline**: [Ver Actions](https://github.com/ignazer/m7Final/actions)
+- **Artefactos**: Disponibles para descarga en cada ejecución
+
+## ⚡ Prueba Local
+
+Para probar localmente, simplemente abre `index.html` en tu navegador:
+
+```bash
+# Abrir directamente
+start index.html
+```
+
+## � Características del Informe
+
+El informe técnico incluye:
+- Estrategia de despliegue continuo
+- Configuración de entornos y seguridad
+- Implementación de monitoreo continuo
+- Automatización y ChatOps
+
+---
+
+**Proyecto desarrollado para el Módulo 7 Final - DevOps y CI/CD** 🚢
 
 ## ✨ Funcionalidades
 
